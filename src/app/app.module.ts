@@ -21,6 +21,9 @@ import { PeliculaComponent } from './components/pelicula/pelicula.component';
 import { ReservarComponent } from './components/reservar/reservar.component';
 import { FavoritosComponent } from './pages/favoritos/favoritos.component';
 import { FavoritoComponent } from './components/favorito/favorito.component';
+import { PeliculasInicioComponent } from './components/peliculas-inicio/peliculas-inicio.component';
+import { DetallePeliculaComponent } from './components/detalle-pelicula/detalle-pelicula.component';
+import { ListaReservasComponent } from './pages/lista-reservas/lista-reservas.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +36,10 @@ import { FavoritoComponent } from './components/favorito/favorito.component';
     PeliculaComponent,
     ReservarComponent,
     FavoritosComponent,
-    FavoritoComponent
+    FavoritoComponent,
+    PeliculasInicioComponent,
+    DetallePeliculaComponent,
+    ListaReservasComponent
   ],
   imports: [
     BrowserModule,
