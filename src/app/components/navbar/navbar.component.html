@@ -1,1 +1,34 @@
-<p>navbar works!</p>
+<nav class="no-logeado" *ngIf="!user">
+  <h1>Cartelera Caracas</h1>
+  <ul>
+    <li [routerLink]="['inicio']">Inicio</li>
+    <li [routerLink]="['lista-peliculas']">Lista de Películas</li>
+    <li (click)="Activacion()">Iniciar Sesión</li>
+  </ul>
+</nav>
+
+
+
+<nav class="logeado" *ngIf="user" >
+  <h1>Cartelera Caracas</h1>
+  <ul>
+    <li [routerLink]="['inicio']">{{user.displayName}}</li>
+    <li [routerLink]="['lista-peliculas']">Lista de Películas</li>
+    <li [routerLink]="['favoritos']">Películas Favoritas</li>
+    <li [routerLink]="['lista-reservas']">Reservaciones</li>
+    <li (click)="Logout()" [routerLink]="['inicio']">Cerrar Sesión</li>
+  </ul>
+</nav>
+
+<!-- SECTION Para iniciar sesión -->
+<div class="overlay" *ngIf="activar">
+  <div class="popup">
+    <a (click)='Activacion()'>X</a>
+    <div class="contenido">
+      <h3>Iniciar Sesión</h3>
+      <h4>Puedes iniciar sesión directamente con Google</h4>
+      <button (click)='LoginGoogle()' (click)='Activacion()' [routerLink]="['inicio']">Iniciar Sesión</button>
+    </div>
+  </div>
+</div>
+

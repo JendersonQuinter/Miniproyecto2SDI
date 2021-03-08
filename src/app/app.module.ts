@@ -12,10 +12,10 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
 
 // Importación del Ambiente
 import { environment } from 'src/environments/environment';
+// Componentes
 import { InicioComponent } from './pages/inicio/inicio.component';
 import { ListaPeliculasComponent } from './pages/lista-peliculas/lista-peliculas.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
-import { LoginComponent } from './components/login/login.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { PeliculaComponent } from './components/pelicula/pelicula.component';
 import { ReservarComponent } from './components/reservar/reservar.component';
@@ -31,7 +31,6 @@ import { ListaReservasComponent } from './pages/lista-reservas/lista-reservas.co
     InicioComponent,
     ListaPeliculasComponent,
     NavbarComponent,
-    LoginComponent,
     FooterComponent,
     PeliculaComponent,
     ReservarComponent,

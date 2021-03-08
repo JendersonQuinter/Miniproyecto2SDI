@@ -1,0 +1,179 @@
+.no-logeado {
+  font-family: 'Times New Roman', Times, serif;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background: rgb(230, 50, 50);
+  color: black;
+  width: 100%;
+  height: 85px;
+
+  h1 {
+    width: 30%;
+    height: 80px;
+    text-align: center;
+    font-size: 2.5vw;
+    line-height: 80px;
+  }
+
+  ul {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    text-align: center;
+    list-style: none;
+    justify-content: center;
+
+    li {
+      width: 100%;
+      height: 85px;
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+      font-size: 1vw;
+      width: 250px;
+      line-height: 75px;
+    }
+    li:hover {
+      background-color: rgb(129, 2, 2);
+      cursor: pointer;
+    }
+  }
+}
+
+// Cuando el usuario ya haya iniciado sesión
+.logeado {
+  font-family: 'Times New Roman', Times, serif;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background: rgb(230, 50, 50);
+  color: black;
+  width: 100%;
+  height: 85px;
+
+  h1 {
+    width: 30%;
+    height: 80px;
+    text-align: center;
+    font-size: 2.5vw;
+    line-height: 80px;
+  }
+
+  ul {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    text-align: center;
+    list-style: none;
+    justify-content: center;
+
+    li {
+      width: 100%;
+      height: 100%;
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+      font-size: 1vw;
+      width: 250px;
+      line-height: 75px;
+    }
+
+    li:hover {
+      background-color: rgb(129, 2, 2);
+      cursor: pointer;
+    }
+  }
+}
+
+
+
+// SECTION de estilos del Popup Iniciar Sesión
+.overlay {
+  background: rgba(0,0,0,.3);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .popup {
+      background: white;
+      box-shadow: 0px 0px 5px 5px rgba(0,0,0,.3);
+      border-radius: 3px;
+      font-family: Arial, Helvetica, sans-serif;
+      padding: 30px;
+      margin-top: -20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 500px;
+      height: 250px;
+      transition: .3s ease all;
+
+      a {
+        margin-top: -55px;
+        text-decoration: none;
+        text-align: center;
+        font-weight: bold;
+        width: 1vw;
+        font-size: 16px;
+        line-height: 15px;
+        margin-left: 98.3%;
+        color: #aaa9a9;
+        transition: .3s ease all;
+      }
+
+      a:hover {
+        color: rgb(85, 85, 85);
+        cursor: pointer;
+      }
+
+      .contenido {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+
+        h3 {
+          margin-top: -30px;
+          font-size: 36px;
+          font-weight: bold;
+          padding-bottom: 20px;
+        }
+
+        h4 {
+          font-size: 16px;
+          margin-bottom: 40px;
+          color: #8a8a8a;
+        }
+
+        button {
+          background:rgb(230, 50, 50);
+          padding: 0 20px;
+          margin-top: 20px;
+          height: 40px;
+          border: none;
+          border-radius: 2px;
+          font-size: 15px;
+          cursor: pointer;
+          transition: .3s ease all;
+        }
+
+        button:hover {
+          background-color: rgb(129, 2, 2);
+        }
+
+
+      }
+  }
+}
