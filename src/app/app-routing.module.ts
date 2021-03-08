@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { ReservarComponent } from './components/reservar/reservar.component';
-import { DetallePeliculaComponent } from './components/detalle-pelicula/detalle-pelicula.component';
 import { FavoritosComponent } from './pages/favoritos/favoritos.component';
 import { ListaPeliculasComponent } from './pages/lista-peliculas/lista-peliculas.component';
 import { InicioComponent } from './pages/inicio/inicio.component';
@@ -16,7 +15,6 @@ const routes: Routes = [
   { path: 'lista-peliculas', component: ListaPeliculasComponent },
   { path: 'lista-reservas', component: ListaReservasComponent, canActivate: [AutenGuard] },
   { path: 'favoritos', component: FavoritosComponent, canActivate: [AutenGuard] },
-  { path: 'detalle-peliculas', component: DetallePeliculaComponent },
   { path: 'reservar', component: ReservarComponent, canActivate: [AutenGuard] },
   { path: 'lista-reservas', component: ListaReservasComponent, canActivate: [AutenGuard] }
 ];

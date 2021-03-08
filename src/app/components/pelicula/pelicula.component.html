@@ -1,4 +1,4 @@
-<section class="pelicula" [routerLink]="['detalle-peliculas']">
+<section class="pelicula" (click)="mostrarDetalles()">
   <div class="imagen">
     <img [src]="img" alt="Img-Película">
   </div>
@@ -14,3 +14,9 @@
     <div class="estado">Estado de la Película</div>
   </div>
 </section>
+
+<div class="overlay" *ngIf="activador">
+  <div class="popup">
+    <h1>Testeando...</h1>
+  </div>
+</div>
