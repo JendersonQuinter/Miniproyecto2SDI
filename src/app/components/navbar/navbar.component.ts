@@ -1,6 +1,7 @@
 import { AuthService } from './../../servicios/auth.service';
 import { Component, OnInit } from '@angular/core';
 import firebase from 'firebase';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -13,7 +14,7 @@ export class NavbarComponent implements OnInit {
 
   user: firebase.User = null;
 
-  constructor(public authService: AuthService) {}
+  constructor(public authService: AuthService, private route: Router) {}
 
   ngOnInit(): void {
     // tslint:disable-next-line: deprecation
@@ -31,6 +32,8 @@ export class NavbarComponent implements OnInit {
   }
 
   LoginGoogle(): void {
-    this.authService.loginWithGoogle();
+    this.authService.loginWithGoogle().then(() => {
+      this.route.navigate(['/']);
+    });
   }
 }

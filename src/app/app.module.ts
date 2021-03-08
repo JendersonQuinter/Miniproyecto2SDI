@@ -46,7 +46,7 @@ import { ListaReservasComponent } from './pages/lista-reservas/lista-reservas.co
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
     AngularFireStorageModule,
-    AngularFireAuthModule
+    AngularFireAuthModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

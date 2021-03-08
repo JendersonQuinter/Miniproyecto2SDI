@@ -40,4 +40,8 @@ export class AuthService {
       console.log(error);
     }
   }
+
+  isAuten(): boolean {
+    return !!localStorage.getItem('user');
+  }
 }
