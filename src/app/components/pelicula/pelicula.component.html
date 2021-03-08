@@ -3,9 +3,9 @@
     <img [src]="img" alt="Img-Película">
   </div>
   <div class="contenido">
-    <div class="titulo">Título de la Película</div>
-    <div class="genero">Genero</div>
-    <div class="idioma">Lenguaje</div>
+    <h3>Título de la Película</h3>
+    <h4>Genero</h4>
+    <h4>Lenguaje</h4>
   </div>
 </section>
 
@@ -35,7 +35,7 @@
       </div>
     </div>
 
-    <div class="botones" *ngIf="true">
+    <div class="botones" *ngIf="user">
       <button>Reservar</button>
       <button>Agregar a Favorito</button>
     </div>
