@@ -3,20 +3,32 @@
     <img [src]="img" alt="Img-Película">
   </div>
   <div class="contenido">
-    <div class="titulo">Titulo</div>
-    <div class="sinopsis">Sinopsis</div>
+    <div class="titulo">Título de la Película</div>
     <div class="genero">Genero</div>
     <div class="idioma">Lenguaje</div>
-    <div class="presupuesto">Presupuesto</div>
-    <div class="rating">Rating</div>
-    <div class="compania">Compañia de Producción</div>
-    <div class="fecha">Fecha de Lanzamiento</div>
-    <div class="estado">Estado de la Película</div>
   </div>
 </section>
 
 <div class="overlay" *ngIf="activador">
   <div class="popup">
-    <h1>Testeando...</h1>
+
+    <div class="imagen">
+      <img [src]="img" alt="Img-Película">
+    </div>
+
+    <div class="contenido">
+      <h3>Título de La Película</h3>
+      <div class="sinopsis">Sinopsis</div>
+      <div class="presupuesto">Presupuesto</div>
+      <div class="rating">Rating</div>
+      <div class="compania">Compañia de Producción</div>
+      <div class="fecha">Fecha de Lanzamiento</div>
+      <div class="estado">Estado de la Película</div>
+    </div>
+    <div class="botones" *ngIf="user">
+      <button>Reservar</button>
+      <button>Agregar a Favorito</button>
+    </div>
+
   </div>
 </div>
