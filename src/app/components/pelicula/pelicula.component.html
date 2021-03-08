@@ -9,23 +9,33 @@
   </div>
 </section>
 
-<div class="overlay" *ngIf="activador">
+<div class="overlay" *ngIf="activador" (click)="mostrarDetalles()">
   <div class="popup">
 
-    <div class="imagen">
-      <img [src]="img" alt="Img-Película">
+    <div class="informacion">
+      <div class="imagen">
+        <img [src]="img" alt="Img-Película">
+      </div>
+
+      <div class="contenido">
+        <h2>Título de La Película</h2>
+        <h4>Sinopsis:</h4>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, harum. Laboriosam, quaerat? Sequi quas nemo ab, quo dolorum accusamus sed.
+        </p>
+        <h4>Presupuesto:</h4>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <h4>Rating:</h4>
+        <p>Lorem, ipsum.</p>
+        <h4>Compañia de Producción:</h4>
+        <p>Lorem ipsum dolor sit.</p>
+        <h4>Fecha de Lanzamiento:</h4>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque, corporis.</p>
+        <h4>Estado de la Película:</h4>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
     </div>
 
-    <div class="contenido">
-      <h3>Título de La Película</h3>
-      <div class="sinopsis">Sinopsis</div>
-      <div class="presupuesto">Presupuesto</div>
-      <div class="rating">Rating</div>
-      <div class="compania">Compañia de Producción</div>
-      <div class="fecha">Fecha de Lanzamiento</div>
-      <div class="estado">Estado de la Película</div>
-    </div>
-    <div class="botones" *ngIf="user">
+    <div class="botones" *ngIf="true">
       <button>Reservar</button>
       <button>Agregar a Favorito</button>
     </div>

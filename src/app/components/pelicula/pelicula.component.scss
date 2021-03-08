@@ -37,14 +37,73 @@
     box-shadow: 0px 0px 5px 5px rgba(0,0,0,.3);
     border-radius: 3px;
     font-family: Arial, Helvetica, sans-serif;
-    padding: 30px;
+    padding: 25px;
     margin-top: -20px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    flex-wrap: wrap;
     width: 1000px;
     height: 700px;
     transition: .3s ease all;
+
+    .informacion {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      img {
+        width: 22vw;
+        height: 60vh;
+        padding-right: 1vw;
+      }
+
+      .contenido {
+        text-align: left;
+
+        h2 {
+          text-align: center;
+          margin-bottom: 1vh;
+          font-size: 2.6vw;
+        }
+
+        h4 {
+          margin-bottom: 0.6vh;
+          font-size: 1vw;
+        }
+
+        p {
+          margin-bottom: 1.5vh;
+          font-size: 0.9vw;
+          margin-left: 1.5vw;
+        }
+      }
+    }
+
+    .botones {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      padding-top: 2vh;
+
+
+      button {
+        background:rgb(230, 50, 50);
+        padding: 0 20px;
+        margin-top: 20px;
+        height: 40px;
+        border: none;
+        border-radius: 2px;
+        font-size: 15px;
+        cursor: pointer;
+        transition: .3s ease all;
+      }
+
+      button:hover {
+        background-color: rgb(129, 2, 2);
+      }
+    }
+
+
   }
 
 
