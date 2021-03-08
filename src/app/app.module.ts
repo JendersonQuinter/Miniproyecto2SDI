@@ -1,8 +1,10 @@
+import { HttpClient } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HttpClientModule} from '@angular/common/http';
 
 // Importaciones de Firebase
 import { AngularFireModule } from '@angular/fire';
@@ -45,6 +47,7 @@ import { ListaReservasComponent } from './pages/lista-reservas/lista-reservas.co
     AngularFirestoreModule,
     AngularFireStorageModule,
     AngularFireAuthModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

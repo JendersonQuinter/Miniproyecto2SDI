@@ -1,5 +1,5 @@
 <nav class="no-logeado" *ngIf="!user">
-  <h1>Cartelera Caracas</h1>
+  <h1 [routerLink]="['inicio']">Cartelera Caracas</h1>
   <ul>
     <li [routerLink]="['inicio']">Inicio</li>
     <li [routerLink]="['lista-peliculas']">Lista de Películas</li>
